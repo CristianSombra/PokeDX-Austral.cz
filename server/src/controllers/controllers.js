@@ -24,6 +24,8 @@ const getAllCharacters = async () => {
             query,
         });
 
+        console.log("Received response:", response.data);
+
         const responseData = response?.data?.data?.pokemon_v2_pokemon || [];
         return responseData.map(formattedData);
     } catch (error) {
