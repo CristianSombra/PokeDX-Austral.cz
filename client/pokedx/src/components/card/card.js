@@ -1,4 +1,5 @@
 import React from "react";
+import img from "../../assets/pokemon.jpg";
 import { IonCard, IonCardHeader, IonCardTitle, IonCardSubtitle, IonCardContent } from '@ionic/react';
 
 const Card = ({ pokemon }) => {
@@ -11,10 +12,11 @@ const Card = ({ pokemon }) => {
     const { name, height, weight, experience, abilities } = pokemon;
 
 return (
-        <IonCard color="danger">
+        <IonCard color="tertiary">
+            <img alt="Quien es éste pokemon?" src={img} />
             <IonCardHeader>
                 <IonCardTitle><h1>Pókemon</h1></IonCardTitle>
-                <IonCardSubtitle>Height:{name}</IonCardSubtitle>
+                <IonCardSubtitle><h2>Nombre: {name}</h2></IonCardSubtitle>
             </IonCardHeader>
 
             <IonCardContent>
