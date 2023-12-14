@@ -1,7 +1,7 @@
-<h1 align="center">Servidor PokeDX-Austral.cz</h1>💾
+<h1 align="center">Servidor PokeDX-Austral.cz</h1>
 
 
-## Descripción:
+## 💾 Descripción:
 
 Este servidor maneja información solicitada desde la https://pokeapi.co/docs/graphql para poder gestionar un PokeDX. A continuación se detalla los módulos y su responsabilidad:
 
