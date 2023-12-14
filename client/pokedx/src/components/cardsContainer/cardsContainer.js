@@ -9,7 +9,6 @@ import {getPokemons} from "../redux/actions.js";
 const CardsContainer = ({ currentPage, setCurrentPage }) => {
     const pokemons = useSelector((state) => state.pokemons)
     const dispatch = useDispatch();
-    // const [currentPage, setCurrentPage] = useState(1);
     const [currentCards, setCurrentCards] = useState([]);
     const cardsPerPage = 6;
 
@@ -34,7 +33,7 @@ const goToPreviousPage = (e) => {
     setCurrentPage((prevPage) => prevPage - 1);
 };
 
-// Página anterior siguiente
+// Página siguiente
 const goToNextPage = (e) => {
     e.preventDefault();
     setCurrentPage((prevPage) => prevPage + 1);
