@@ -1,20 +1,11 @@
-.landing-image {
-    width: 25%;
+.landing-image-pika {
+    max-width: 65%; 
+    width: 50%;
+    margin: 10px auto;
+}
 
-    @media (max-width: 1165px) {
-        width: 35%;
-    }
-
-    @media (max-width: 767px) {
-        width: 40%;
-    }
-
-    @media (max-width: 488px) {
-        width: 50%;
-    }
-
-    max-width: 100%;
-    height: auto;
-    display: block; 
-    margin: 0 auto; 
+.landing-image-poke {
+    max-width: 70%;
+    width: 60%;
+    margin: 0 auto;
 }

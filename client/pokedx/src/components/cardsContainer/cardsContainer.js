@@ -11,7 +11,7 @@ const CardsContainer = ({ currentPage, setCurrentPage }) => {
     const dispatch = useDispatch();
     // const [currentPage, setCurrentPage] = useState(1);
     const [currentCards, setCurrentCards] = useState([]);
-    const cardsPerPage = 12;
+    const cardsPerPage = 6;
 
 useEffect(() => {
     dispatch(getPokemons());

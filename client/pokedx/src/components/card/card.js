@@ -15,8 +15,8 @@ return (
         <IonCard color="tertiary">
             <img alt="Quien es éste pokemon?" src={img} />
             <IonCardHeader>
-                <IonCardTitle><h1>Pókemon</h1></IonCardTitle>
-                <IonCardSubtitle><h2>Nombre: {name}</h2></IonCardSubtitle>
+                <IonCardTitle><h1>Nombre: {name}</h1></IonCardTitle>
+                <IonCardSubtitle><h2>Características</h2></IonCardSubtitle>
             </IonCardHeader>
 
             <IonCardContent>

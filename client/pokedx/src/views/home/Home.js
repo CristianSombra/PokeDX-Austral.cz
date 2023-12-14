@@ -22,7 +22,7 @@ const Home = () => {
                         <IonImg src={logo} style={{ width: '55px', height: '55px' }} />
                     </IonButton>
                 </IonButtons>
-                <IonButtons slot="end">
+                <IonButtons slot="end" onClick={handleLogoClick}>
                     <IonButton>
                         <Link to="/">
                         <IonIcon icon={exitOutline} style={{ fontSize: '35px', color: 'blue' }} />
