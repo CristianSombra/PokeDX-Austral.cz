@@ -1,7 +1,7 @@
-<h1 align="center">Cliente PokeDX-Austral.cz</h1>📲
+<h1 align="center">Cliente PokeDX-Austral.cz</h1>
 
 
-## Descripción:
+## 📲 Descripción:
 
 Este cliente maneja información solicitada desde al servidor mediante la URL http://localhost:3001/ para poder gestionar un PokeDX. A continuación se detalla los módulos y su responsabilidad:
 
