@@ -52,7 +52,6 @@ return (
     <div>
         <IonRefresher slot="fixed" onIonRefresh={(e) => handleRefresh(e)}>
             <IonRefresherContent
-                
                 pullingText="Desliza para actualizar"
                 refreshingSpinner="crescent"
                 refreshingText="Actualizando..."
