@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import CardsContainer from "../../components/cardsContainer/cardsContainer.js"
 import logo from "../../assets/logo.png";
 
+
 const Home = () => {
     const [currentPage, setCurrentPage] = useState(1);
 

@@ -1,4 +1,4 @@
-<h1 align="center">Servidor PokeDX-Austral.cz</h1>
+<h1 align="center">Servidor PokeDX-Austral.cz</h1>💾
 
 
 ## Descripción:
@@ -21,3 +21,10 @@ En el archivo `handlers.js` se establece y gestiona la respuesta a las solicitud
 
 ### Controller
 En el archivo `controllers.js` se establece y gestiona la comunicación con la API y se realiza el formateo de datos para el consumo que se requiere.
+
+### Instalación y configuración 😎
+Paso 1: realizar `npm install`
+Paso 2: ingresar `npm start`
+
+Corre en el puerto.\
+[http://localhost:3001](http://localhost:3001).
