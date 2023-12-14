@@ -1,9 +1,10 @@
-import React,{useEffect, useState} from "react";
-import { IonGrid, IonRow, IonCol, IonButton, IonLabel, IonIcon } from '@ionic/react';
-import { arrowBack, arrowForward } from 'ionicons/icons';
+import React,{useState, useEffect} from "react";
+import { IonGrid, IonRow, IonCol, IonButton, IonLabel, IonIcon, IonRefresher, IonRefresherContent } from '@ionic/react';
+import { arrowBack, arrowForward} from 'ionicons/icons';
 import Card from "../card/card.js";
 import {useSelector, useDispatch} from "react-redux";
 import {getPokemons} from "../redux/actions.js";
+
 
 const CardsContainer = ({ currentPage, setCurrentPage }) => {
     const pokemons = useSelector((state) => state.pokemons)
@@ -41,8 +42,23 @@ const goToNextPage = (e) => {
 
 const totalPages = Math.ceil(pokemons.length / cardsPerPage);
 
+//Función refrescar al deslizar la pantalla
+const handleRefresh = async (event) => {
+    await dispatch(getPokemons());
+    setCurrentPage(1);
+    event.detail.complete();
+};
+
 return (
     <div>
+        <IonRefresher slot="fixed" onIonRefresh={(e) => handleRefresh(e)}>
+            <IonRefresherContent
+                
+                pullingText="Desliza para actualizar"
+                refreshingSpinner="crescent"
+                refreshingText="Actualizando..."
+            />
+        </IonRefresher>
         <IonGrid>
             <IonRow>
                 {currentCards.map((pokemon, index) => (
@@ -68,7 +84,7 @@ return (
                         <IonIcon icon={arrowForward} />
                     </IonButton>
                 </IonCol>
-            </IonRow>
+        </IonRow>
     </div>
     );
 }
