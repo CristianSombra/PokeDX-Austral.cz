@@ -1,7 +1,7 @@
 <h1 align="center">PokeDX-Austral.cz</h1>
 
 
-## Descripción:📱
+## 📱 Descripción:
 
 Página web full stack, que tiene consiste en un PokeDX en el que se puede visualizar características principales de cada pokemon. En cada carpeta raiz podrá encontrar un readme con la descripción general de su estructura.
 
